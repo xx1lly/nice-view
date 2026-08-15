@@ -1,0 +1,10 @@
+{
+  "name": "niceview-vanilla",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nice View — чистый HTML/CSS/JS, без React/Three.js",
+  "scripts": {
+    "dev": "npx --yes serve . -l 5173",
+    "start": "npx --yes serve . -l 5173"
+  }
+}

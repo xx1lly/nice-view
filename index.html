@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nice View Residence</title>
+    <meta name="description" content="Nice View — premium residential complex for comfortable family life" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="./img/bg1.webp"
+      fetchpriority="high"
+      imagesrcset="./img/bg1.webp 1280w"
+      type="image/webp"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./css/bundle.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <input type="checkbox" id="header-menu-toggle" class="header__toggle" />
+
+      <a class="header__brand" href="#home">NICE VIEW</a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <a class="header__link" href="#home" data-nav-link>Home</a>
+        <a class="header__link" href="#about" data-nav-link>About</a>
+        <a class="header__link" href="#apartments" data-nav-link>Apartments</a>
+        <a class="header__link" href="#infrastructure" data-nav-link>Infrastructure</a>
+        <a class="header__link" href="#gallery" data-nav-link>Gallery</a>
+        <a class="header__link" href="#contacts" data-nav-link>Contacts</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#contacts" class="header__button" data-open-contact>Contact us</a>
+      </div>
+
+      <label class="header__burger" for="header-menu-toggle" aria-label="Open navigation">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+
+      <label class="header__overlay" for="header-menu-toggle"></label>
+
+      <aside class="header__mobile" aria-label="Mobile navigation menu">
+        <label class="header__mobile-close" for="header-menu-toggle" aria-label="Close navigation">
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="header__mobile-orb header__mobile-orb--one"></div>
+        <div class="header__mobile-orb header__mobile-orb--two"></div>
+
+        <p class="header__mobile-label">Nice View Residence</p>
+
+        <nav class="header__mobile-nav" aria-label="Mobile navigation">
+          <a href="#home" class="header__mobile-link" data-mobile-link><span>01</span>Home</a>
+          <a href="#about" class="header__mobile-link" data-mobile-link><span>02</span>About</a>
+          <a href="#apartments" class="header__mobile-link" data-mobile-link><span>03</span>Apartments</a>
+          <a href="#infrastructure" class="header__mobile-link" data-mobile-link><span>04</span>Infrastructure</a>
+          <a href="#gallery" class="header__mobile-link" data-mobile-link><span>05</span>Gallery</a>
+          <a href="#contacts" class="header__mobile-link" data-mobile-link><span>06</span>Contacts</a>
+        </nav>
+
+        <a href="#contacts" class="header__mobile-button" data-open-contact data-mobile-link>
+          Contact us <span>&#8599;</span>
+        </a>
+
+        <p class="header__mobile-text">A place to breathe, belong and feel at home.</p>
+      </aside>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__blobs" aria-hidden="true">
+          <span class="hero__blob hero__blob--1"></span>
+          <span class="hero__blob hero__blob--2"></span>
+          <span class="hero__blob hero__blob--3"></span>
+          <span class="hero__blob hero__blob--4"></span>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">Nice view</h1>
+          <p class="hero__subtitle">For your comfortable life with your family</p>
+          <button type="button" class="hero__button" data-open-contact>Contact us</button>
+        </div>
+      </section>
+      <section class="philosophy" id="about">
+        <div class="container philosophy__inner">
+          <div class="philosophy__stats">
+            <figure class="philosophy__stat" data-tilt data-tilt-max="9">
+              <span class="philosophy__stat-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Experience Icon"><path d="M9 6.33333H3.66667C2.95942 6.33333 2.28115 6.61428 1.78105 7.11438C1.28095 7.61448 1 8.29276 1 9V22.3333C1 23.0406 1.28095 23.7189 1.78105 24.219C2.28115 24.719 2.95942 25 3.66667 25H25C25.7072 25 26.3855 24.719 26.8856 24.219C27.3857 23.7189 27.6667 23.0406 27.6667 22.3333V9C27.6667 8.29276 27.3857 7.61448 26.8856 7.11438C26.3855 6.61428 25.7072 6.33333 25 6.33333H19.6667M9 6.33333H19.6667M9 6.33333V1.8C9 1.58783 9.08428 1.38434 9.23431 1.23431C9.38434 1.08429 9.58783 1 9.8 1H18.8667C19.0788 1 19.2823 1.08429 19.4324 1.23431C19.5824 1.38434 19.6667 1.58783 19.6667 1.8V6.33333" stroke="#2D2A22" stroke-width="2"/></svg>
+              </span>
+              <figcaption class="philosophy__stat-text"><span>15 years of<br />experience</span></figcaption>
+            </figure>
+            <figure class="philosophy__stat" data-tilt data-tilt-max="9">
+              <span class="philosophy__stat-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Residents Icon"><path d="M22.3333 13V21.5333C22.3333 21.7455 22.249 21.949 22.099 22.099C21.949 22.249 21.7455 22.3333 21.5333 22.3333H4.46667C4.25449 22.3333 4.05101 22.249 3.90098 22.099C3.75095 21.949 3.66667 21.7455 3.66667 21.5333V13M1 8.33333L13 1L25 8.33333H1Z" stroke="#2D2A22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <figcaption class="philosophy__stat-text"><span>30 thousand<br />happy residents</span></figcaption>
+            </figure>
+            <figure class="philosophy__stat" data-tilt data-tilt-max="9">
+              <span class="philosophy__stat-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Houses Icon"><path d="M22.3333 22.3333H1V1" stroke="#2D2A22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 17.6666L11.6667 7.66663L15.6667 11.6666L21.6667 5.66663" stroke="#2D2A22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <figcaption class="philosophy__stat-text"><span>22 houses built</span></figcaption>
+            </figure>
+            <figure class="philosophy__stat" data-tilt data-tilt-max="9">
+              <span class="philosophy__stat-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Awards Icon"><path d="M19.6667 29H10.3333M19.6667 29V15.9326C19.6667 15.6851 19.5683 15.4477 19.3933 15.2726C19.2183 15.0976 18.9809 14.9993 18.7333 14.9993H11.2667C11.0191 14.9993 10.7817 15.0976 10.6067 15.2726C10.4317 15.4477 10.3333 15.6851 10.3333 15.9326V29M19.6667 29H28.0667C28.3142 29 28.5516 28.9017 28.7266 28.7266C28.9017 28.5516 29 28.3142 29 28.0666V24.4887C29 24.2411 28.9017 24.0037 28.7266 23.8286C28.5516 23.6536 28.3142 23.5553 28.0667 23.5553H20.6C20.3525 23.5553 20.1151 23.6536 19.94 23.8286C19.765 24.0037 19.6667 24.2411 19.6667 24.4887V29ZM10.3333 29V21.3774C10.3333 21.1298 10.235 20.8924 10.06 20.7174C9.88493 20.5423 9.64753 20.444 9.4 20.444H1.93333C1.6858 20.444 1.4484 20.5423 1.27337 20.7174C1.09833 20.8924 1 21.1298 1 21.3774V28.0666C1 28.3142 1.09833 28.5516 1.27337 28.7266C1.4484 28.9017 1.6858 29 1.93333 29H10.3333ZM13.1427 4.28557L14.5567 1.28785C14.5948 1.20216 14.657 1.12936 14.7357 1.07828C14.8144 1.02719 14.9062 1 15 1C15.0938 1 15.1856 1.02719 15.2643 1.07828C15.343 1.12936 15.4052 1.20216 15.4433 1.28785L16.8589 4.28557L20.0198 4.76937C20.4258 4.8316 20.5876 5.35429 20.2936 5.65298L18.0069 7.98643L18.5467 11.2813C18.6151 11.7044 18.192 12.028 17.828 11.8273L15 10.2717L12.172 11.8273C11.8096 12.0264 11.3849 11.7044 11.4533 11.2813L11.9931 7.98643L9.70645 5.65298C9.41089 5.35429 9.57422 4.8316 9.97867 4.76937L13.1427 4.28713V4.28557Z" stroke="#2D2A22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <figcaption class="philosophy__stat-text"><span>9 awards</span></figcaption>
+            </figure>
+          </div>
+
+          <article class="philosophy__content" data-reveal>
+            <h2 class="philosophy__title">Philosophy of our company</h2>
+            <p class="philosophy__text">
+              Residential complex "Nice view" is an island of tranquility, security and comfort.
+              In our project, we created the opportunity to lead a measured life in the very center of the city.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="apartments" id="apartments">
+        <div class="container apartments__container">
+          <h2 class="apartments__title">Choose your apartment</h2>
+          <div class="apartments__grid" id="apartmentsGrid" data-tilt-group></div>
+        </div>
+      </section>
+      <section class="infrastructure" id="infrastructure" data-reveal-section>
+        <div class="container infrastructure__container">
+          <h2 class="infrastructure__title" data-reveal>Infrastructure</h2>
+          <div class="infrastructure__visual" data-reveal>
+            <picture>
+              <source
+                srcset="./img/infrastructure-600.webp 600w, ./img/infrastructure-1000.webp 1000w, ./img/infrastructure-1440.webp 1440w"
+                sizes="(max-width: 480px) calc(100vw - 28px), (max-width: 767px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 40px), (max-width: 1295px) calc(100vw - 80px), 1215px"
+                type="image/webp"
+              />
+              <img
+                src="./img/infrastructure-1000.jpg"
+                srcset="./img/infrastructure-600.jpg 600w, ./img/infrastructure-1000.jpg 1000w, ./img/infrastructure-1440.jpg 1440w"
+                sizes="(max-width: 480px) calc(100vw - 28px), (max-width: 767px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 40px), (max-width: 1295px) calc(100vw - 80px), 1215px"
+                width="1800"
+                height="930"
+                alt="Nice View infrastructure plan"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+            <div class="infrastructure__panel is-revealed" data-tilt data-tilt-max="4" aria-label="Walking distances">
+              <div class="infrastructure__row">
+                <span class="infrastructure__badge"><strong>2</strong><span>minutes<br />walk</span></span>
+                <span>to the supermarket</span>
+              </div>
+              <div class="infrastructure__row infrastructure__row--middle">
+                <span>to the coffee shop</span>
+                <span class="infrastructure__badge"><strong>4</strong><span>minutes<br />walk</span></span>
+              </div>
+              <div class="infrastructure__row">
+                <span class="infrastructure__badge"><strong>7</strong><span>minutes<br />walk</span></span>
+                <span>to the nearest park</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container gallery__inner">
+          <h2 class="gallery__title" id="galleryTitle" aria-label="Gallery"></h2>
+
+          <div class="gallery__glass-panel" id="galleryPanel">
+            <div class="gallery__slider" id="gallerySlider" tabindex="0" aria-label="Photo gallery slider">
+              <button type="button" class="gallery__control gallery__control--prev lg" aria-label="Previous slide" id="galleryPrev">
+                <div class="lg-surface"><div class="lg-sheen"></div><div class="lg-edge"></div></div>
+                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M14 2L4 12L14 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+
+              <div class="gallery__viewport" id="galleryViewport">
+                <div class="gallery-stage" id="galleryStage"></div>
+              </div>
+
+              <button type="button" class="gallery__control gallery__control--next lg" aria-label="Next slide" id="galleryNext">
+                <div class="lg-surface"><div class="lg-sheen"></div><div class="lg-edge"></div></div>
+                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M2 2L12 12L2 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="gallery__dots" id="galleryDots"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contacts" data-reveal-section>
+        <div class="container contact__container">
+          <h2 class="section__title contact__title text-center" data-reveal>Get in touch!</h2>
+          <p class="section__subtitle contact__subtitle text-center" data-reveal>
+            We usually reply within a few hours — let's talk.
+          </p>
+
+          <div class="contact__card" id="contactCard" data-tilt data-tilt-max="5" data-reveal>
+            <div class="contact__info">
+              <div class="contact__item">
+                <span class="contact__icon-wrap">
+                  <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                    <circle cx="12" cy="9" r="2.5" />
+                  </svg>
+                </span>
+                <span>4517 Washington Ave.</span>
+              </div>
+              <div class="contact__item">
+                <span class="contact__icon-wrap">
+                  <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </span>
+                <a href="mailto:willie.jennings@example.com">willie.jennings@example.com</a>
+              </div>
+              <div class="contact__item">
+                <span class="contact__icon-wrap">
+                  <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                <a href="tel:+33700555479">(+33)7 00 55 54 79</a>
+              </div>
+              <button type="button" class="contact__button" id="btnContact" data-open-contact>Contact us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-reveal-section>
+      <div class="container footer__inner">
+        <div class="footer__brand" data-reveal><span>NICE</span><span>VIEW</span></div>
+
+        <div class="footer__column" data-reveal>
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#apartments">Apartments</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column" data-reveal>
+          <h3 class="footer__title">Contacts</h3>
+          <ul class="footer__list">
+            <li><a href="tel:4065550120">(406) 555-0120</a></li>
+            <li>ul. Chodkiewicza Karola 111, Chorzow</li>
+            <li><a href="mailto:deanna.curtis@example.com">deanna.curtis@example.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social" data-reveal>
+          <a href="#" aria-label="YouTube">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642l.359-4H14V6.333c0-1.164.234-1.667 1.591-1.667H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg>
+          </a>
+        </div>
+
+        <div class="footer__bottom text-center" data-reveal>
+          By using this website, you agree to the
+          <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+      <div class="modal__content">
+        <button type="button" class="modal__close" aria-label="Close modal" data-close-modal>&times;</button>
+        <h3 class="modal__title" id="modalTitle">Leave your contacts and we will contact you</h3>
+        <form class="modal__form" id="contactForm">
+          <div class="modal__field">
+            <label for="modal-name">Name</label>
+            <input type="text" id="modal-name" name="name" placeholder="Yuliia" required />
+          </div>
+          <div class="modal__field">
+            <label for="modal-phone">Telephone</label>
+            <input type="tel" id="modal-phone" name="phone" placeholder="+380" required />
+          </div>
+          <div class="modal__field">
+            <label for="modal-email">Email</label>
+            <input type="email" id="modal-email" name="email" placeholder="Contact@gmail.com" required />
+          </div>
+          <button type="submit" class="modal__submit">Contact us</button>
+        </form>
+      </div>
+    </div>
+    <div class="property-modal" id="propertyModal" role="dialog" aria-modal="true" aria-labelledby="propertyModalTitle" aria-hidden="true">
+      <div class="property-modal__backdrop" data-close-property></div>
+      <article class="property-modal__dialog">
+        <button class="property-modal__close" type="button" aria-label="Close apartment details" data-close-property>&times;</button>
+        <div class="property-modal__media">
+          <img id="propertyImage" src="" alt="Apartment plan" width="400" height="300" loading="lazy" />
+        </div>
+        <div class="property-modal__content">
+          <p class="property-modal__eyebrow">Nice View residence</p>
+          <h3 class="property-modal__title" id="propertyModalTitle"></h3>
+          <dl class="property-modal__facts">
+            <div><dt>Total area</dt><dd id="propertyArea">—</dd></div>
+            <div><dt>Rooms</dt><dd id="propertyRooms">—</dd></div>
+            <div><dt>Price from</dt><dd id="propertyPrice">—</dd></div>
+          </dl>
+          <div class="property-modal__actions">
+            <button type="button" class="property-modal__button" data-property-contact>Contact us</button>
+            <button type="button" class="property-modal__catalog" data-property-catalog>Get catalog</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="catalog-modal" id="catalogModal" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle" aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-close-catalog></div>
+      <article class="catalog-modal__dialog">
+        <button class="catalog-modal__close" type="button" aria-label="Close catalog form" data-close-catalog>&times;</button>
+        <div class="catalog-modal__icon" aria-hidden="true">&#10022;</div>
+        <div class="catalog-modal__content">
+          <h3 id="catalogModalTitle">Download the catalog</h3>
+          <p>Leave your email and we will send the full catalog with photos, plans and prices.</p>
+          <form class="catalog-modal__form" id="catalogForm">
+            <input type="email" name="catalog-email" placeholder="Email address" required aria-label="Email address" />
+            <button type="submit">Send</button>
+          </form>
+          <p class="catalog-modal__success" id="catalogSuccess" aria-live="polite"></p>
+        </div>
+      </article>
+    </div>
+
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
